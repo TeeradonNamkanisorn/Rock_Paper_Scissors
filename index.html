@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            Game1
+        </title>
+        <link href = "style.css" rel = 'stylesheet'>
+    </head>
+    <body>
+        <h1>RPS game</h1>
+        <div class="instructionDisplay">
+            ROCK => SCISSORS => PAPER => ROCK
+        </div>
+        <div id = "scoreDisplay" class='displays'>
+            <div class="displayBoard">Wins <p id="winDisplay" class="displayNumbers">0</p></div>
+            <div class="displayBoard">Losses <p id="lossDisplay" class="displayNumbers">0</p></div>
+            <div class="displayBoard">Draws <p id="drawDisplay" class="displayNumbers">0</p></div>
+            <div class="displayBoard">Win Streak <p id="streakDisplay" class="displayNumbers">0</p></div>
+        </div>
+        <div id = "playerMovesContainer">
+                <b>Click one of these icons or press 1/2/3 to play a move</b> <br>
+            <img id="rock" class="playerMove" src="rock.png" alt="rock">
+            <img id="paper" class="playerMove" src="paper.png" alt="paper">
+            <img id="scissor" class="playerMove" src="scissors.png" alt="scissor">
+        </div>
+        <div id='comMoveContainer'>
+            Computer's Move
+            <br>
+            <div id = "computersPlay">
+
+            </div>
+        </div>
+        <div id="myModal">
+            <div id="modalContent" class="modal">
+                <p id = "modalText"></p>
+                <p id="reminder"> Press <em>space</em> to close</p>
+            </div>
+        </div>
+        <button id="reset">RESET</button>
+        <script src="script.js"></script>
+
+    </body>
+</html>
